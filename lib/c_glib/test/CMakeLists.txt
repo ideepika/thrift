@@ -20,7 +20,8 @@
 
 set(TEST_PREFIX "c_glib")
 
-# include_directories(SYSTEM ${Boost_INCLUDE_DIRS})
+include(BoostMacros)
+REQUIRE_BOOST_HEADERS()
 
 #Make sure gen-cpp and gen-c_glib files can be included
 include_directories("${CMAKE_CURRENT_BINARY_DIR}")
